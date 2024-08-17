@@ -1,10 +1,8 @@
-﻿using fullStackOops.Destructor;
-
-namespace fullStackOops
+﻿namespace fullStackOops
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             //Create an object of Car
             /*ClassObjects.Car myCar = new ClassObjects.Car();
@@ -108,7 +106,7 @@ namespace fullStackOops
 
             //Destructor IDisposable
 
-            using (Destructor.MyResource myResourceDes = new Destructor.MyResource())
+            /*using (Destructor.MyResource myResourceDes = new Destructor.MyResource())
             {
                 //use the resource
                 Console.WriteLine("using the resource..");
@@ -118,6 +116,32 @@ namespace fullStackOops
             //Optionally force garbage collection to see the destructor in action 
             GC.Collect();
             GC.WaitForPendingFinalizers();           
+*/
+
+            //static class : configuration management (AppSettings)
+            /*Console.WriteLine("Configuration management");
+            Console.WriteLine(StaticClass.AppSettings.APIBaseURL);
+            Console.WriteLine(StaticClass.AppSettings.ConnectionString);*/
+
+            //Utility Methods (StringUtils)
+            /*Console.WriteLine("Utility Methods");
+            Console.WriteLine(StaticClass.StringUtils.ToTitleCase("hello world"));*/
+
+            //centralizing logging functionlatiy (Logger)
+            /*Console.WriteLine("Centralizing logging functionality");
+            Console.WriteLine(StaticClass.Logger.Log);*/
+
+            // Caching: Static Data Storage
+            Console.WriteLine("Caching: Static Data Storage");
+            StaticClass.Cache.Add("key1", "value1");
+            StaticClass.Cache.Add("key2", "value2");
+            Console.WriteLine(StaticClass.Cache.Get("key1"));
+            Console.WriteLine(StaticClass.Cache.Get("key2"));
+
+            // ApiHelper: Helper Methods for API Requests
+            Console.WriteLine("ApiHelper: Helper Methods for API Requests");
+            string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
+            Console.WriteLine(apiResponse);
 
 
         }
