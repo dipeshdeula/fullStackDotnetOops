@@ -1,4 +1,6 @@
-﻿namespace fullStackOops
+﻿using fullStackOops.Inheritance;
+
+namespace fullStackOops
 {
     internal class Program
     {
@@ -76,6 +78,23 @@
             mySaving.openAccount();
             mySaving.withdraw();*/
 
+            //create instances of classes implementing the interface
+            Interfaces.IAnimal myDog = new Interfaces.Dog("Spike");
+            Interfaces.IAnimal myCat = new Interfaces.Cat("Tom");
+
+            //call the method defined in the interface
+            myDog.MakeSound();
+            Console.WriteLine($"The dog's name is {myDog.Name}");
+            myCat.MakeSound();
+            Console.WriteLine($"The cat's name is {myCat.Name}");
+
+            //create instances of classes implementing multiple interfaces
+            Interfaces.Robot myRobot = new Interfaces.Robot();
+            myRobot.Move();
+            myRobot.Read();
+
+
+
             //Encapuslation
             //Create an object of BankAccount Class
             /*     Encapsulations.BankAccount myBankAccount = new Encapsulations.BankAccount();
@@ -132,7 +151,7 @@
             Console.WriteLine(StaticClass.Logger.Log);*/
 
             // Caching: Static Data Storage
-            Console.WriteLine("Caching: Static Data Storage");
+           /* Console.WriteLine("Caching: Static Data Storage");
             StaticClass.Cache.Add("key1", "value1");
             StaticClass.Cache.Add("key2", "value2");
             Console.WriteLine(StaticClass.Cache.Get("key1"));
@@ -142,7 +161,7 @@
             Console.WriteLine("ApiHelper: Helper Methods for API Requests");
             string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
             Console.WriteLine(apiResponse);
-
+*/
 
         }
     }
