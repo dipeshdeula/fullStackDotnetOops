@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace fullStackOops.Polymorphism.MethodOverriding
 {
+    //polymorphism is a method which acts differently based on the object that calls it
     public class Animal
     {
+        //fields
         private string Name;
         private string Color;
 
@@ -23,6 +25,7 @@ namespace fullStackOops.Polymorphism.MethodOverriding
             Console.WriteLine("Name: {0}", Name);
             Console.WriteLine("Color: {0}", Color);
         }
+        //base class ko method lai override garna lai virtual keyword use garne
         public virtual void Eat() {
             Console.WriteLine("Animal is eating");
         }

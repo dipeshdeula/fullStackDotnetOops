@@ -35,7 +35,7 @@ namespace fullStackOops
 
             //polymorphim Method Overriding
             //Create an object of Animal Class
-            /*Polymorphism.MethodOverriding.Animal myAnimal = new Polymorphism.MethodOverriding.Animal("Zebra", "Black and White");
+       /*     Polymorphism.MethodOverriding.Animal myAnimal = new Polymorphism.MethodOverriding.Animal("Zebra", "Black and White");
             myAnimal.DisplayInfo();
             myAnimal.Eat();
 
@@ -47,18 +47,18 @@ namespace fullStackOops
             //Create an object of Tiger Class
             Polymorphism.MethodOverriding.Tiger myTiger = new Polymorphism.MethodOverriding.Tiger("Tiger", "Yellow", 10);
             myTiger.TigerInfo();
-            myTiger.Eat();
+            myTiger.Eat();*/
 
-*/
+
 
             //Polymorphism Method Overloading
             //Create an object of MathOperations Class
-            /*Polymorphism.MethodOverloading.MathOperations math = new Polymorphism.MethodOverloading.MathOperations();
-            Console.WriteLine("Method Overloading Example:");
-            Console.WriteLine(math.Add(10));
-            Console.WriteLine(math.Add(10, 20));
-            Console.WriteLine(math.Add(10, 20, 30));
-            Console.WriteLine(math.Add(10, 20.5));*/
+            /* Polymorphism.MethodOverloading.MathOperations math = new Polymorphism.MethodOverloading.MathOperations();
+             Console.WriteLine("Method Overloading Example:");
+             Console.WriteLine(math.Add(10));
+             Console.WriteLine(math.Add(10, 20));
+             Console.WriteLine(math.Add(10, 20, 30));
+             Console.WriteLine(math.Add(10, 20.5));*/
 
             //Abstract
 
@@ -79,21 +79,21 @@ namespace fullStackOops
             mySaving.withdraw();*/
 
             //create instances of classes implementing the interface
-            Interfaces.IAnimal myDog = new Interfaces.Dog("Spike");
-            Interfaces.IAnimal myCat = new Interfaces.Cat("Tom");
+            /*  Interfaces.IAnimal myDog = new Interfaces.Dog("Spike");
+              Interfaces.IAnimal myCat = new Interfaces.Cat("Tom");
 
-            //call the method defined in the interface
-            myDog.MakeSound();
-            Console.WriteLine($"The dog's name is {myDog.Name}");
-            myCat.MakeSound();
-            Console.WriteLine($"The cat's name is {myCat.Name}");
+              //call the method defined in the interface
+              myDog.MakeSound();
+              Console.WriteLine($"The dog's name is {myDog.Name}");
+              myCat.MakeSound();
+              Console.WriteLine($"The cat's name is {myCat.Name}");
 
-            //create instances of classes implementing multiple interfaces
-            Interfaces.Robot myRobot = new Interfaces.Robot();
-            myRobot.Move();
-            myRobot.Read();
+              //create instances of classes implementing multiple interfaces
+              Interfaces.Robot myRobot = new Interfaces.Robot();
+              myRobot.Move();
+              myRobot.Read();
 
-
+  */
 
             //Encapuslation
             //Create an object of BankAccount Class
@@ -151,17 +151,17 @@ namespace fullStackOops
             Console.WriteLine(StaticClass.Logger.Log);*/
 
             // Caching: Static Data Storage
-           /* Console.WriteLine("Caching: Static Data Storage");
-            StaticClass.Cache.Add("key1", "value1");
-            StaticClass.Cache.Add("key2", "value2");
-            Console.WriteLine(StaticClass.Cache.Get("key1"));
-            Console.WriteLine(StaticClass.Cache.Get("key2"));
+            /* Console.WriteLine("Caching: Static Data Storage");
+             StaticClass.Cache.Add("key1", "value1");
+             StaticClass.Cache.Add("key2", "value2");
+             Console.WriteLine(StaticClass.Cache.Get("key1"));
+             Console.WriteLine(StaticClass.Cache.Get("key2"));
 
-            // ApiHelper: Helper Methods for API Requests
-            Console.WriteLine("ApiHelper: Helper Methods for API Requests");
-            string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
-            Console.WriteLine(apiResponse);
-*/
+             // ApiHelper: Helper Methods for API Requests
+             Console.WriteLine("ApiHelper: Helper Methods for API Requests");
+             string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
+             Console.WriteLine(apiResponse);
+ */
 
         }
     }

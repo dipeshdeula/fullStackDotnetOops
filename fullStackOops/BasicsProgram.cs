@@ -1,0 +1,266 @@
+﻿namespace fullStackOops
+{
+    public class BasicsProgram
+    {
+        public static void Main(string[] args)
+        {
+
+            //Problems
+            //Q.no.1: WAC#P to compare any two strings
+
+            /* string name1 = "Dipesh";
+             string name2 = "Deula";
+             int compareString = name1.CompareTo(name2);
+             if (compareString == 0)
+             {
+                 Console.WriteLine("Both strings are equal");
+             }
+             else {
+                 Console.WriteLine("Not a equal strings");
+             }*/
+
+            //Q.no.2: WAC#P to find sum of two numbers.
+            /* Console.Write("Enter the first number: ");
+             int num1 =Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter the second number: ");
+             int num2 = Convert.ToInt32(Console.ReadLine());
+             int sum = num1 + num2;
+             Console.WriteLine($"The sum of num1={num1} and num2={num2} is : "+sum);*/
+
+            //Q.no.3: WAC#P to find product of two numbers.
+            /* Console.Write("Enter the first number: ");
+             int num1 = Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter the second number: ");
+             int num2 = Convert.ToInt32(Console.ReadLine());
+             int product = num1 * num2;
+             Console.WriteLine($"The product of num1={num1} and num2={num2} is : " + product);*/
+
+            //Q.no.4: WAC#P to find simple interest.[si=(p*t*r)/100]
+
+            /* Console.Write("Enter the Principal Amount:");
+             double principal = Convert.ToDouble(Console.ReadLine());
+
+             Console.Write("Enter the Time : ");
+             double time = Convert.ToDouble(Console.ReadLine());
+
+             Console.Write("Enter the Rate: ");
+             double rate = Convert.ToDouble(Console.ReadLine());
+
+             double simpleInterest = (principal * rate * time) / 100;
+
+             Console.WriteLine("Simple Interest: "+simpleInterest);*/
+
+            //Q.no.5: wap to find the area of circle. [area = pi * r * r] use pi as constant
+
+            /*Console.Write("Enter the value of radius: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+
+            double area = Math.PI * radius * radius;
+
+            Console.WriteLine("The area of circle is : " + area);*/
+
+            //Q.no.6: WAC#P to find the largest among two numbers
+            /*Console.WriteLine("Enter the first number: ");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number: ");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine($"The largest number is {firstNumber} i.e firstNumber");
+            }
+            else {
+                Console.WriteLine($"The largest number is {secondNumber} i.e secondNumber");
+            }
+*/
+            //Q.no.7: WAC#P to find the smallest among two numbers
+            /* Console.WriteLine("Enter the first number: ");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number: ");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine($"The smallest number is {secondNumber} i.e firstNumber");
+            }
+            else {
+                Console.WriteLine($"The smallest number is {firstNumber} i.e secondNumber");
+            }*/
+
+            //Q.no.8: WAC#P to find the largest among three numbers
+            /* Console.Write("Enter the first number: ");
+             int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+             Console.Write("Enter the second number: ");
+             int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+             Console.Write("Enter the third number: ");
+             int thirdNumber = Convert.ToInt32(Console.ReadLine());
+
+             if (firstNumber > secondNumber && firstNumber > thirdNumber)
+             {
+                 Console.WriteLine($"The largest number is {firstNumber} i.e firstNumber");
+             }
+             else if (secondNumber > thirdNumber)
+             {
+
+                 Console.WriteLine($"The largest number is {secondNumber} i.e secondNumber");
+             }
+
+
+             else
+             {
+                 Console.WriteLine($"The largest number is {thirdNumber} i.e thirdNumber");
+             }*/
+
+            //Q.no.9: WAC#P to find the smallest among two numbers
+
+            /* Console.Write("Enter the first number: ");
+             int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+             Console.Write("Enter the second number: ");
+             int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+             Console.Write("Enter the third number: ");
+             int thirdNumber = Convert.ToInt32(Console.ReadLine());
+
+             if (firstNumber < secondNumber && firstNumber < thirdNumber)
+             {
+                 Console.WriteLine($"The smallest number is {firstNumber} i.e firstNumber");
+             }
+             else if (secondNumber < thirdNumber)
+             {
+
+                 Console.WriteLine($"The smallest number is {secondNumber} i.e secondNumber");
+             }
+
+             else
+             {
+                 Console.WriteLine($"The smallest number is {thirdNumber} i.e thirdNumber");
+             }
+ */
+            //Q.no.10: WAC#P to check whether a number is odd or even
+            /* Console.Write("Enter the number: ");
+             int num = Convert.ToInt32(Console.ReadLine());
+             bool isOddEven = false;
+
+             if (num % 2 == 0)
+             {
+                 isOddEven = true;
+
+             }
+             else { 
+                 isOddEven = false;
+
+             }
+
+             if (isOddEven)
+             {
+                 Console.WriteLine($"The {num} is Even number");
+             }
+             else {
+                 Console.WriteLine($"The {num} is Odd number");
+             }*/
+
+            //Q.no.11: WAC#P to check whether a number is divisible by 7 or not;
+            /*Console.WriteLine("Enter a number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            bool isDivisibleBySeven = false;
+
+            if (number % 7 == 0)
+            {
+                isDivisibleBySeven = true;
+            }
+            else
+            {
+                isDivisibleBySeven = false;
+            }
+
+            if (isDivisibleBySeven)
+            {
+                Console.WriteLine($"The {number} is divisible by 7");
+
+            }
+            else
+            {
+                Console.WriteLine($"The {number} is not divisible by 7");
+
+            }*/
+
+            //Q.no.12: WAC#P to check whether a number is exactly by 5 and 10
+            /*Console.Write("Enter a number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            bool isExactltByFiveAndTen = false;
+
+            if (number % 5 == 0 && number % 10 ==0)
+            {
+                isExactltByFiveAndTen = true;
+            }
+
+            if (isExactltByFiveAndTen)
+            {
+                Console.WriteLine($"The {number} is exactly by 5 and 10");
+
+            }
+            else
+            {
+                Console.WriteLine($"The {number} is not exactly by 5 and 10");
+
+            }*/
+
+            //Q.no.13: WAC#P to check whether a number is divisible by 7 but not by 13.
+            /*Console.WriteLine("Enter a number: ");
+            int number = Convert.ToInt32 (Console.ReadLine());
+            bool isDivisibleBySevenNotThirteen = false;
+
+            if (number % 7 == 0 && number % 13 != 0)
+            {
+                isDivisibleBySevenNotThirteen = true;
+            }
+            if (isDivisibleBySevenNotThirteen)
+            {
+                Console.WriteLine($"The {number} is divisible by 7 but not by 13");
+            }
+            else {
+                Console.WriteLine($"The {number} is not divisible by 7 also not by 13");
+            }*/
+
+            //Q.no.14: WAC#P to input CP and SP and check profit or loss. Also find profit or loss Amount
+           /* Console.Write("Enter the CP: ");
+            int CP = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter the SP: ");
+            int SP = Convert.ToInt32(Console.ReadLine());
+
+            double profit, loss, profitAmount, lossAmount;
+            bool isProfitLoss = false;
+
+            if (CP > SP)
+            {
+               
+                isProfitLoss = true;
+            }
+          
+
+            if (isProfitLoss)
+            {
+                loss = CP - SP;
+                lossAmount = (loss / CP) * 100;
+
+                Console.WriteLine($"Loss :{loss}, lossAmount:{lossAmount}");
+
+            }
+            else {
+                profit = SP - CP;
+                profitAmount = (profit / CP) * 100;
+
+                Console.WriteLine($"profit :{profit}, profitAmount:{profitAmount}");
+
+
+            }*/
+
+        }
+    }
+}
