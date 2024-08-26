@@ -73,7 +73,7 @@
             else {
                 Console.WriteLine($"The largest number is {secondNumber} i.e secondNumber");
             }
-*/
+            */
             //Q.no.7: WAC#P to find the smallest among two numbers
             /* Console.WriteLine("Enter the first number: ");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
@@ -140,7 +140,7 @@
              {
                  Console.WriteLine($"The smallest number is {thirdNumber} i.e thirdNumber");
              }
- */
+            */
             //Q.no.10: WAC#P to check whether a number is odd or even
             /* Console.Write("Enter the number: ");
              int num = Convert.ToInt32(Console.ReadLine());
@@ -228,39 +228,150 @@
             }*/
 
             //Q.no.14: WAC#P to input CP and SP and check profit or loss. Also find profit or loss Amount
-           /* Console.Write("Enter the CP: ");
-            int CP = Convert.ToInt32(Console.ReadLine());
+            /* Console.Write("Enter the CP: ");
+             int CP = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter the SP: ");
-            int SP = Convert.ToInt32(Console.ReadLine());
+             Console.Write("Enter the SP: ");
+             int SP = Convert.ToInt32(Console.ReadLine());
 
-            double profit, loss, profitAmount, lossAmount;
-            bool isProfitLoss = false;
+             double profit, loss, profitAmount, lossAmount;
+             bool isProfitLoss = false;
 
-            if (CP > SP)
+             if (CP > SP)
+             {
+
+                 isProfitLoss = true;
+             }
+
+
+             if (isProfitLoss)
+             {
+                 loss = CP - SP;
+                 lossAmount = (loss / CP) * 100;
+
+                 Console.WriteLine($"Loss :{loss}, lossAmount:{lossAmount}");
+
+             }
+             else {
+                 profit = SP - CP;
+                 profitAmount = (profit / CP) * 100;
+
+                 Console.WriteLine($"profit :{profit}, profitAmount:{profitAmount}");
+
+
+             }*/
+
+            //Q.no.15: WAC#P to find print numbers from 1 to 100.
+            /*
+                        Console.WriteLine("Numbers from 1 to 100");
+                        for (int i = 1; i <= 100; i++)
+                        {
+                            Console.WriteLine(i);
+                        }*/
+
+            //Q.no.16: WAC#P to find sum of numbers from 5 to 100.
+            /*Console.WriteLine("Sum of numbers from 5 to 100 :");
+            int sum = 0;
+            for (int i = 5; i <= 100; i++)
             {
-               
-                isProfitLoss = true;
+                sum += i;
             }
-          
+            Console.WriteLine("The sum of number 5 to 100 :" + sum);*/
 
-            if (isProfitLoss)
+            //Q.no.17: WAC#P to check whether a number is prime or not.
+            /* Console.Write("Enter the number:");
+             int num = Convert.ToInt32(Console.ReadLine());
+             bool isPrime = true;
+
+             for (int i = 2; i < num / 2; i++)
+             {
+                 if (num % i == 0)
+                 {
+                     isPrime = false;
+                     break;
+                 }
+             }
+
+             if (isPrime)
+             {
+
+                 Console.WriteLine($"The number {num} is prime");
+             }
+             else
+             {
+                 Console.WriteLine($"The number {num} is not prime");
+             }
+            */
+
+            // Q.no.17: WAC#P to print prime numbers from 1 to 100
+            // Console.WriteLine("Prime numbers from 1 to 100:");
+
+            // Method to check if a number is prime
+            /* bool IsPrime(int number)
+             {
+                 if (number <= 1) return false;
+                 if (number == 2) return true;
+                 if (number % 2 == 0) return false;
+
+                 for (int i = 3; i <= Math.Sqrt(number); i += 2)
+                 {
+                     if (number % i == 0) return false;
+                 }
+
+                 return true;
+             }
+
+
+             for (int i = 1; i <= 100; i++)
+             {
+                 if (IsPrime(i))
+                 {
+                     Console.WriteLine(i);
+                 }
+             }
+ */
+            //Q.no.18: WAC#P to print Fibonacci series upto n terms.
+            /*Console.WriteLine("Enter the value of n:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            int a = 0;
+            int b = 1;
+            int c;
+
+            for (int i = 0; i < number; i++)
             {
-                loss = CP - SP;
-                lossAmount = (loss / CP) * 100;
+                c = a + b;
+                a = b;
+                b = c;
 
-                Console.WriteLine($"Loss :{loss}, lossAmount:{lossAmount}");
-
-            }
-            else {
-                profit = SP - CP;
-                profitAmount = (profit / CP) * 100;
-
-                Console.WriteLine($"profit :{profit}, profitAmount:{profitAmount}");
-
-
+                Console.WriteLine(c);
             }*/
 
+            //Q.no.19: WAC#P to find the factorial of any number.
+            /*Console.Write("Enter the number:");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int fact = 1;
+            for (int i = 1; i <= num; i++)
+            {
+                fact *= i;
+
+            }
+            Console.WriteLine($"The factorial of {num} is {fact}");
+*/
+            //Q.no. 20: WAC#P to generate multiplication table from 1 to 10.
+           /* Console.Write("Enter the number:");
+            int num = Convert.ToInt32 (Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++) 
+            {
+                int multiplication = num * i;
+
+                Console.WriteLine(num + "X" + i + "=" + multiplication);
+            }*/
+
+
         }
+
     }
 }
