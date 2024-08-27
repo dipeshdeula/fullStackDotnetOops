@@ -1,4 +1,5 @@
 ﻿using fullStackOops.Inheritance;
+using fullStackOops.OperatorOverloading;
 
 namespace fullStackOops
 {
@@ -35,19 +36,19 @@ namespace fullStackOops
 
             //polymorphim Method Overriding
             //Create an object of Animal Class
-       /*     Polymorphism.MethodOverriding.Animal myAnimal = new Polymorphism.MethodOverriding.Animal("Zebra", "Black and White");
-            myAnimal.DisplayInfo();
-            myAnimal.Eat();
+            /*     Polymorphism.MethodOverriding.Animal myAnimal = new Polymorphism.MethodOverriding.Animal("Zebra", "Black and White");
+                 myAnimal.DisplayInfo();
+                 myAnimal.Eat();
 
-            //Create an object of Donkey Class
-            Polymorphism.MethodOverriding.Donkey myDonkey = new Polymorphism.MethodOverriding.Donkey("Donkey", "Grey", 100);
-            myDonkey.DonkeyInfo();
-            myDonkey.Eat();
+                 //Create an object of Donkey Class
+                 Polymorphism.MethodOverriding.Donkey myDonkey = new Polymorphism.MethodOverriding.Donkey("Donkey", "Grey", 100);
+                 myDonkey.DonkeyInfo();
+                 myDonkey.Eat();
 
-            //Create an object of Tiger Class
-            Polymorphism.MethodOverriding.Tiger myTiger = new Polymorphism.MethodOverriding.Tiger("Tiger", "Yellow", 10);
-            myTiger.TigerInfo();
-            myTiger.Eat();*/
+                 //Create an object of Tiger Class
+                 Polymorphism.MethodOverriding.Tiger myTiger = new Polymorphism.MethodOverriding.Tiger("Tiger", "Yellow", 10);
+                 myTiger.TigerInfo();
+                 myTiger.Eat();*/
 
 
 
@@ -162,6 +163,36 @@ namespace fullStackOops
              string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
              Console.WriteLine(apiResponse);
  */
+/*
+            OperatorOverloading.Price p = new OperatorOverloading.Price(12, 0);
+            Console.WriteLine(p);
+
+            OperatorOverloading.Price q = new OperatorOverloading.Price(4,0);
+            Console.WriteLine(q);
+
+            Price r = p + q;
+            Console.WriteLine(r);
+
+            r++;
+            Console.WriteLine(r);
+
+            if (p > q)
+                Console.WriteLine("p is greater");
+            else
+                Console.WriteLine("Q is greater");*/
+
+            //studentOperator Overloading
+            OperatorOverloading.StudentOperatorOverloading student1 = new OperatorOverloading.StudentOperatorOverloading("Ram", 20, 1);
+            OperatorOverloading.StudentOperatorOverloading student2 = new OperatorOverloading.StudentOperatorOverloading("Shyam", 22, 2);
+
+            Console.WriteLine(student1);
+            Console.WriteLine(student2);
+
+            StudentOperatorOverloading student3 = student1 + student2;
+            Console.WriteLine(student3);
+
+            student1++;
+            Console.WriteLine(student1);
 
         }
     }

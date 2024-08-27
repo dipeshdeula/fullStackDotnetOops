@@ -9,36 +9,50 @@ namespace fullStackOops.OperatorOverloading
     public class Price
     {
         //fields
-        public int Rupees;
-        public int Paise;
+        string symbol;
+        public int rupees;
+        public int paisa;
 
         //constructor
-        public Price(int rupees, int paise)
+        public Price(int rupees, int paisa)
         {
-            Rupees = rupees;
-            Paise = paise;
+            this.symbol = "Rs.";
+            this.rupees = rupees;       
+            this.paisa = paisa;
         }
 
-        //overloading unary operator
-        public static Price operator ++(Price price)
+        public override string ToString()
         {
-            price.Paise = price.Paise + 1;
-            return price;
+            return (symbol + " " + rupees + "." + paisa);
         }
 
-        public static Price operator --(Price price)
-        {
-            price.Paise--;
-            return price;
+        public static Price operator + (Price p, Price q)
+        { 
+            int rs = p.rupees + q.rupees;
+            int ps = p.paisa + q.paisa;
+            return new Price(rs, ps);
+        }
+        public static Price operator ++(Price p)
+        { 
+            p.rupees++;
+            p.paisa++;
+            return p;
         }
 
-        //overloading binary operator
-        public static Price operator +(Price price1, Price price2)
+        public static Boolean operator > (Price p, Price q)
         {
-            Price price = new Price(0, 0);
-            price.Rupees = price1.Rupees + price2.Rupees;
-            price.Paise = price1.Paise + price2.Paise;
-            return price;
+            if (p.rupees > q.rupees)
+                return true;
+            return false;
+            
         }
+
+        public static Boolean operator <(Price p, Price q)
+        {
+            if (p.rupees < q.rupees)
+                return true;
+            return false;
+        }
+
     }
 }

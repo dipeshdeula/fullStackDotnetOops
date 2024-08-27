@@ -24,25 +24,29 @@ namespace fullStackOops.OperatorOverloading
             Rolls = rolls;
         }
 
-        //overloading unary operator
+        public override string ToString()
+        {
+            return "Name: " + Name + " Age: " + Age + " Rolls: " + Rolls;
+        }
+
+
+        //unary OperatorOverloading
         public static StudentOperatorOverloading operator ++(StudentOperatorOverloading student)
         {
-            student.Rolls = student.Rolls + 1;
+            student.Rolls++;
             return student;
         }
 
-        public static StudentOperatorOverloading operator --(StudentOperatorOverloading student)
+        //binary OperatorOverloading
+        public static StudentOperatorOverloading operator + (StudentOperatorOverloading student1, StudentOperatorOverloading student2)
         {
-            student.Rolls = student.Rolls - 1;
-            return student;
+            int rolls = student1.Rolls + student2.Rolls;
+            int age = student1.Age + student2.Age;
+            return new StudentOperatorOverloading(student1.Name + student2.Name, age, rolls);
+          
         }
 
-        //overloading binary operator
-        public static StudentOperatorOverloading operator +(StudentOperatorOverloading student1, StudentOperatorOverloading student2)
-        {
-            StudentOperatorOverloading student = new StudentOperatorOverloading(" ", 0, 0);
-            student.Rolls = student1.Rolls + student2.Rolls;
-            return student;
-        }
+       
+       
     }
 }
