@@ -1,10 +1,12 @@
-﻿namespace fullStackOops
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace fullStackOops
 {
     public class BasicsProgram
     {
-       /* public static void Main(string[] args)
+        public static void Main(string[] args)
         {
-*/
+
             //Problems
             //Q.no.1: WAC#P to compare any two strings
 
@@ -360,18 +362,108 @@
             Console.WriteLine($"The factorial of {num} is {fact}");
 */
             //Q.no. 20: WAC#P to generate multiplication table from 1 to 10.
-           /* Console.Write("Enter the number:");
-            int num = Convert.ToInt32 (Console.ReadLine());
+            /* Console.Write("Enter the number:");
+             int num = Convert.ToInt32 (Console.ReadLine());
 
-            for (int i = 1; i <= 10; i++) 
+             for (int i = 1; i <= 10; i++) 
+             {
+                 int multiplication = num * i;
+
+                 Console.WriteLine(num + "X" + i + "=" + multiplication);
+             }*/
+
+            //Q.no.21: WAC#P to find the reverse of a number.
+            /* Console.WriteLine("Enter a number:");
+             int number = Convert.ToInt32(Console.ReadLine());
+
+             int reverse = 0;
+
+             while(number != 0)
+             {
+                 int rem = number % 10;
+                 reverse = reverse * 10 + rem;
+                 number = number / 10;
+             }
+
+             Console.WriteLine($"The reverse of a number is : {reverse}");
+ */
+            //Q.no.22: WAC#P to check whether a number is palindrome or not.
+            /*  Console.Write("Enter a number:");
+              int number = Convert.ToInt32(Console.ReadLine());
+              int temp = number;
+
+              int reverse = 0;
+
+              while (number != 0)
+              {
+                  int rem = number % 10;
+                  reverse = reverse * 10 + rem;
+                  number = number / 10;
+              }
+
+              if (temp == reverse)
+              {
+                  Console.WriteLine($"The given number is palindrome i.e {reverse}");
+              }
+              else {
+                  Console.WriteLine($"The given number is not palindrome i.e {reverse}");
+              }*/
+            //Q.no.23: WAC#P to find the sum of digits of a number.
+            /* Console.WriteLine("Enter a number:");
+             int number = Convert.ToInt32(Console.ReadLine());
+             int sum = 0;
+
+             while (number != 0)
+             {
+                 int rem = number % 10;
+                 sum += rem;
+                 number = number / 10;
+             }
+
+             Console.WriteLine($"The sum of digits of a number is : {sum}");*/
+
+            //Q.no.24: WAC#P to find sum of 20 numbers in an array
+            /* Console.Write("Enter the numbers:");
+             int[] nums = new int[20];
+             int Sum = 0;
+
+             for (int i = 0; i < 20; i++)
+             {
+                 nums[i] = Convert.ToInt32(Console.ReadLine());
+                 Sum += nums[i];
+             }
+             Console.WriteLine($"The sum of 20 numbers in array is : {Sum}");*/
+
+            //Q.no.25: WAC#P to find maximum and minimum number from array
+            Console.Write("Enter the size of array:");
+            int numArray = Convert.ToInt32(Console.ReadLine());
+
+            int[] arrayMaxMin = new int[numArray];
+           // int Max = 0;
+            Console.WriteLine("Enter your arrray nums: ");
+
+            //taking user input array numbers
+            for (int i = 0; i < numArray; i++)
             {
-                int multiplication = num * i;
+                arrayMaxMin[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Array num:");
+            for (int i = 0; i < numArray; i++)
+            {
+                Console.Write(arrayMaxMin[i]+" ");
+                
+            }
+            Console.WriteLine("\n");
 
-                Console.WriteLine(num + "X" + i + "=" + multiplication);
-            }*/
-/*
+           
+
+            int MaxNumber = arrayMaxMin.Max();
+            int MinNumber = arrayMaxMin.Min();
+            Console.WriteLine("Max num: "+MaxNumber);
+            Console.WriteLine("Max num: " + MinNumber);
+
 
         }
-*/
+
     }
 }
