@@ -569,6 +569,87 @@
                  Console.WriteLine(i + 1 + "." + Names[i]);
              }*/
 
+            //Q.no. 28 : WAC#P to add any two matrices
+            Console.WriteLine("Enter the row and col of matrix 1 : ");
+            int row1 = Convert.ToInt32(Console.ReadLine());
+            int col1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the row and col of matrix 2 : ");
+            int row2 = Convert.ToInt32(Console.ReadLine());
+            int col2 = Convert.ToInt32(Console.ReadLine());
+
+            //define matrix
+            int[,] matrix1 = new int[row1, col1];
+            int[,] matrix2 = new int[row2, col2];
+            int[,] result = new int[row1, col1];
+
+            //checking the compatiblity
+            if (row1 != row2 || col1 != col2)
+            {
+                Console.WriteLine("Matrix are incompatible!! Enter a valid row col operation");
+            }
+            else
+            {
+
+                Console.WriteLine("Enter the values of Matrix1: ");
+
+                //taking user input matrix1
+                for (int i = 0; i < row1; i++)
+                {
+                    for (int j = 0; j < col1; j++)
+                    {
+                        Console.Write($"matrix1[{i},{j}]: ");
+                        matrix1[i, j] = Convert.ToInt32(Console.ReadLine());
+                    }
+
+                }
+
+                //Displaying user input matrix1
+                for (int i = 0; i < row1; i++)
+                {
+                    for (int j = 0; j < col1; j++)
+                    {
+
+                        Console.Write(matrix1[i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+
+
+                //taking user input matrix2
+                for (int i = 0; i < row2; i++)
+                {
+                    for (int j = 0; j < col2; j++)
+                    {
+                        Console.Write($"matrix2[{i},{j}]: ");
+                        matrix2[i, j] = Convert.ToInt32(Console.ReadLine());
+                    }
+
+                }
+
+                //Displaying user input matrix2
+                for (int i = 0; i < row2; i++)
+                {
+                    for (int j = 0; j < col2; j++)
+                    {
+
+                        Console.Write(matrix2[i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("Added two matrices : matrix1 with matrix2");
+                //add two matrix : matrix1 and matrix2
+                for (int i = 0; i < row1; i++)
+                {
+                    for (int j = 0; j < col2; j++)
+                    {
+                        result[i, j] = matrix1[i, j] + matrix2[i, j];
+                        Console.Write(result[i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+            }
+
 
         }
 
