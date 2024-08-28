@@ -435,33 +435,101 @@ namespace fullStackOops
              Console.WriteLine($"The sum of 20 numbers in array is : {Sum}");*/
 
             //Q.no.25: WAC#P to find maximum and minimum number from array
-            Console.Write("Enter the size of array:");
-            int numArray = Convert.ToInt32(Console.ReadLine());
+            /*  Console.Write("Enter the size of array:");
+              int numArray = Convert.ToInt32(Console.ReadLine());
 
-            int[] arrayMaxMin = new int[numArray];
-           // int Max = 0;
-            Console.WriteLine("Enter your arrray nums: ");
+              int[] arrayMaxMin = new int[numArray];
+             // int Max = 0;
+              Console.WriteLine("Enter your arrray nums: ");
 
-            //taking user input array numbers
-            for (int i = 0; i < numArray; i++)
+              //taking user input array numbers
+              for (int i = 0; i < numArray; i++)
+              {
+                  arrayMaxMin[i] = Convert.ToInt32(Console.ReadLine());
+              }
+              Console.WriteLine("Array num:");
+              for (int i = 0; i < numArray; i++)
+              {
+                  Console.Write(arrayMaxMin[i]+" ");
+
+              }
+              Console.WriteLine("\n");
+
+
+
+              int MaxNumber = arrayMaxMin.Max();
+              int MinNumber = arrayMaxMin.Min();
+              Console.WriteLine("Max num: "+MaxNumber);
+              Console.WriteLine("Max num: " + MinNumber);
+  */
+            //Q.no.26: WAC#P to sort 'n' numbers in asceding number
+
+            Console.WriteLine("Enter the size of number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int[] sortArray = new int[num];
+
+            //taking user input array number
+            Console.Write("Enter the numbers to be inserted in array:");
+            for (int i = 0; i < num; i++)
             {
-                arrayMaxMin[i] = Convert.ToInt32(Console.ReadLine());
+                sortArray[i] = Convert.ToInt32(Console.ReadLine());
+
             }
-            Console.WriteLine("Array num:");
-            for (int i = 0; i < numArray; i++)
+            Console.WriteLine("Displayed array numbers: ");
+
+            //Displaying user input array number
+            for (int i = 0; i < num; i++)
             {
-                Console.Write(arrayMaxMin[i]+" ");
-                
+                Console.WriteLine(sortArray[i]);
             }
-            Console.WriteLine("\n");
 
-           
+            //sort array in ascending order using bubble sort
+          
+            for (int i = 0; i < num-1; i++)
+            {
+                for (int j = 0; j < num - i - 1; j++) 
+                {
+                    if (sortArray[j] > sortArray[j+ 1])
+                    {
+                        int temp = sortArray[j];
+                        sortArray[j] = sortArray[j+1];
+                        sortArray[j+1] = temp;
+                    }
 
-            int MaxNumber = arrayMaxMin.Max();
-            int MinNumber = arrayMaxMin.Min();
-            Console.WriteLine("Max num: "+MaxNumber);
-            Console.WriteLine("Max num: " + MinNumber);
+                }
+               
+            }
 
+            
+            //Display data in asceding order
+            Console.WriteLine("Display array in asceding order: ");
+            for (int i = 0; i < num; i++)
+            {
+                Console.WriteLine(sortArray[i]);
+            }
+            //sort array in descending order using bubble sort
+
+            for (int i = 0; i < num - 1; i++)
+            {
+                for (int j = 0; j < num - i - 1; j++)
+                {
+                    if (sortArray[j] < sortArray[j + 1])
+                    {
+                        int temp = sortArray[j];
+                        sortArray[j] = sortArray[j + 1];
+                        sortArray[j + 1] = temp;
+                    }
+
+                }
+
+            }
+            //Display data in desceding order
+            Console.WriteLine("Display array in Descending order: ");
+            for (int i = 0; i < num; i++)
+            {
+                Console.WriteLine(sortArray[i]);
+            }
 
         }
 
