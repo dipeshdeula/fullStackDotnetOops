@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace fullStackOops
+﻿namespace fullStackOops
 {
     public class BasicsProgram
     {
@@ -462,74 +460,115 @@ namespace fullStackOops
               Console.WriteLine("Max num: "+MaxNumber);
               Console.WriteLine("Max num: " + MinNumber);
   */
-            //Q.no.26: WAC#P to sort 'n' numbers in asceding number
+            /*      //Q.no.26: WAC#P to sort 'n' numbers in asceding number
 
-            Console.WriteLine("Enter the size of number: ");
-            int num = Convert.ToInt32(Console.ReadLine());
+                  Console.WriteLine("Enter the size of number: ");
+                  int num = Convert.ToInt32(Console.ReadLine());
 
-            int[] sortArray = new int[num];
+                  int[] sortArray = new int[num];
 
-            //taking user input array number
-            Console.Write("Enter the numbers to be inserted in array:");
-            for (int i = 0; i < num; i++)
-            {
-                sortArray[i] = Convert.ToInt32(Console.ReadLine());
+                  //taking user input array number
+                  Console.Write("Enter the numbers to be inserted in array:");
+                  for (int i = 0; i < num; i++)
+                  {
+                      sortArray[i] = Convert.ToInt32(Console.ReadLine());
 
-            }
-            Console.WriteLine("Displayed array numbers: ");
+                  }
+                  Console.WriteLine("Displayed array numbers: ");
 
-            //Displaying user input array number
-            for (int i = 0; i < num; i++)
-            {
-                Console.WriteLine(sortArray[i]);
-            }
+                  //Displaying user input array number
+                  for (int i = 0; i < num; i++)
+                  {
+                      Console.WriteLine(sortArray[i]);
+                  }
 
-            //sort array in ascending order using bubble sort
-          
-            for (int i = 0; i < num-1; i++)
-            {
-                for (int j = 0; j < num - i - 1; j++) 
-                {
-                    if (sortArray[j] > sortArray[j+ 1])
-                    {
-                        int temp = sortArray[j];
-                        sortArray[j] = sortArray[j+1];
-                        sortArray[j+1] = temp;
-                    }
+                  //sort array in ascending order using bubble sort
 
-                }
-               
-            }
+                  for (int i = 0; i < num-1; i++)
+                  {
+                      for (int j = 0; j < num - i - 1; j++) 
+                      {
+                          if (sortArray[j] > sortArray[j+ 1])
+                          {
+                              int temp = sortArray[j];
+                              sortArray[j] = sortArray[j+1];
+                              sortArray[j+1] = temp;
+                          }
 
-            
-            //Display data in asceding order
-            Console.WriteLine("Display array in asceding order: ");
-            for (int i = 0; i < num; i++)
-            {
-                Console.WriteLine(sortArray[i]);
-            }
-            //sort array in descending order using bubble sort
+                      }
 
-            for (int i = 0; i < num - 1; i++)
-            {
-                for (int j = 0; j < num - i - 1; j++)
-                {
-                    if (sortArray[j] < sortArray[j + 1])
-                    {
-                        int temp = sortArray[j];
-                        sortArray[j] = sortArray[j + 1];
-                        sortArray[j + 1] = temp;
-                    }
+                  }
 
-                }
 
-            }
-            //Display data in desceding order
-            Console.WriteLine("Display array in Descending order: ");
-            for (int i = 0; i < num; i++)
-            {
-                Console.WriteLine(sortArray[i]);
-            }
+                  //Display data in asceding order
+                  Console.WriteLine("Display array in asceding order: ");
+                  for (int i = 0; i < num; i++)
+                  {
+                      Console.WriteLine(sortArray[i]);
+                  }
+                  //sort array in descending order using bubble sort
+
+                  for (int i = 0; i < num - 1; i++)
+                  {
+                      for (int j = 0; j < num - i - 1; j++)
+                      {
+                          if (sortArray[j] < sortArray[j + 1])
+                          {
+                              int temp = sortArray[j];
+                              sortArray[j] = sortArray[j + 1];
+                              sortArray[j + 1] = temp;
+                          }
+
+                      }
+
+                  }
+                  //Display data in desceding order
+                  Console.WriteLine("Display array in Descending order: ");
+                  for (int i = 0; i < num; i++)
+                  {
+                      Console.WriteLine(sortArray[i]);
+                  }
+      */
+
+            /* //Q.no.27: WAC#P to sort name of 10 persons in alphabetical order.
+             Console.WriteLine("Enter the name of 10 persons: ");
+             string[] Names = new string[10];
+             //Taking user input names
+             for (int i = 0; i < Names.Length; i++)
+             {
+                 Names[i] = Console.ReadLine();
+                 Names[i] = Names[i].ToLower();
+
+             }
+
+             Console.WriteLine("Display the list of 10 Persons: ");
+
+             //Displaying Names
+             for (int i = 0; i < Names.Length; i++)
+             {
+                 Console.WriteLine(i + 1 + "." + Names[i]);
+             }
+
+             //sort them in alphabetical order using built-in method [Array.Sort()]
+             //  Array.Sort(Names);
+             for (int i = 0; i < Names.Length - 1; i++)
+             {
+                 for (int j = 0; j < Names.Length - i - 1; j++)
+                 { 
+                     if(Names[j].CompareTo(Names[j+1]) > 0)
+                     {
+                         string temp = Names[j];
+                         Names[j] = Names[j + 1];
+                         Names[j + 1] = temp;
+                     }
+                 }
+             }
+             Console.WriteLine("Display the list of 10 Persons in alphabetical order: ");
+             for (int i = 0; i < Names.Length; i++)
+             {
+                 Console.WriteLine(i + 1 + "." + Names[i]);
+             }*/
+
 
         }
 
