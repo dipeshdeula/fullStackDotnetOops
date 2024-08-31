@@ -651,7 +651,7 @@
                         }*/
 
             //Q.no.29: WAC#P to multiply any two matrices
-            Console.WriteLine("Enter the row and col of matrix 1 : ");
+            /*Console.WriteLine("Enter the row and col of matrix 1 : ");
             int row1 = Convert.ToInt32(Console.ReadLine());
             int col1 = Convert.ToInt32(Console.ReadLine());
 
@@ -737,9 +737,17 @@
 
                 }
             }
+*/
+            //Q.no.30 : WAC#P to find the command line arguments and sum of them
+           /* Console.WriteLine("Enter the numbers: ");
+            int num= args.Length;
+            int sum = 0;
+            for (int i = 0; i < num; i++)
+            {
+                sum += Convert.ToInt32(args[i]);
+            }
+            Console.WriteLine("The sum of command line arguments is : " + sum);*/
 
         }
-            
-
     }
 }
