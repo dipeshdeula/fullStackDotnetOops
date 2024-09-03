@@ -2,9 +2,9 @@
 {
     public class BasicsProgram
     {
-        public static void Main(string[] args)
+        /*public static void Main(string[] args)
         {
-
+*/
             //Problems
             //Q.no.1: WAC#P to compare any two strings
 
@@ -739,8 +739,8 @@
             }
 */
             //Q.no.30 : WAC#P to find the command line arguments and sum of them
-           /* Console.WriteLine("Enter the numbers: ");
-            int num= args.Length;
+            /*Console.WriteLine("Enter the numbers: ");
+            int num = args.Length;
             int sum = 0;
             for (int i = 0; i < num; i++)
             {
@@ -748,6 +748,6 @@
             }
             Console.WriteLine("The sum of command line arguments is : " + sum);*/
 
-        }
+       /* }*/
     }
 }
