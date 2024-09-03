@@ -37,7 +37,7 @@ namespace fullStackOops.Delegates
             return number;
         }
 
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             //static method doe't need instance to call
             Addition(20);
@@ -53,7 +53,7 @@ namespace fullStackOops.Delegates
             c1(20);
             Console.WriteLine(getNumber());
             
-        }
+        }*/
 
 
     }
