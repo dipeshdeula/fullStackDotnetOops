@@ -1,0 +1,38 @@
+﻿Static Class
+
+-Static Means Something which cannot be instantiated
+-You cannot create an object of a static class,
+-and cannot access the members of a static class using an object.
+-You can access the members of a static class using the class name itself.
+-Static class members are shared among all the objects of the class.
+-Static class members are created only once and shared among all the objects of the class.
+-Static class members are created when the class is loaded into memory and destroyed when the class is unloaded
+-Static class members are created in the memory at the time of class loading.
+-C# static class cannot contain instance constructors
+-Apply static modifier before the class name and after access modifier to make a class static.
+
+
+Advantages:
+-Static members can be accessed directly with their class name.
+-Static members are created only once and shared among all the objects of the class.
+-Static keword is used before the class keyword in a class definition to declare a static class.
+
+Example:
+Below is an example of a static class in C#.
+The calculator class is a static . All the member of it are also static.
+
+public static class Calculator
+{
+	private static int _resultStorage = 0;
+	public static string Type = "Arthimetic";
+
+	public static int Add(int a, int b)
+	{
+		return a + b;
+	}
+	public static void Store(int result)
+	{
+		_resultStorage = result;
+	}
+
+}

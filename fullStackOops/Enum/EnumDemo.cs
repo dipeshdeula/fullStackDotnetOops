@@ -29,12 +29,21 @@ namespace fullStackOops.Enum
             int day2 = (int)WeekDays.Wednesday;
             Console.WriteLine(WeekDays.Wednesday+ ":" + day2);  
 
+            int day3 = (int)WeekDays.Thursday;
+            Console.WriteLine(WeekDays.Thursday+ ":" + day3);
+
+            int day4 = (int)WeekDays.Friday;
+            Console.WriteLine(WeekDays.Friday + ":" + day4);
+
+            int day5 = (int)WeekDays.Saturday;
+            Console.WriteLine(WeekDays.Saturday+ ":" + day5);
+
         }
 
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         { 
             EnumDemo e = new EnumDemo();
             e.Display();
-        }
+        }*/
     }
 }
