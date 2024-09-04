@@ -9,7 +9,7 @@ namespace fullStackOops.Annonymous_Types
     public class AnnonymousTypes
     {
         //Anonymous Type
-        var Details = new
+        /*var Details = new
         {
             FirstName = "Dipesh",
             LastName = "Deula",
@@ -29,14 +29,14 @@ namespace fullStackOops.Annonymous_Types
                 new {ProjectName = "Admin Poratl",ProjectDuration="25hrs"},
                 new {ProjectName = "Accounting",ProjectDuration="30hrs"}
             }
-        };
+        };*/
 
 
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             AnnonymousTypes obj = new AnnonymousTypes();
             Console.WriteLine(obj.Details.FirstName);
             
-        }
+        }*/
     }
 }

@@ -36,3 +36,20 @@ public static class Calculator
 	}
 
 }
+
+Extension Methods
+-Extension methods , as the name suggests, are additonal methods
+-These methods create and add new methods to existing class without creating new child class.
+-They are the special type of the static methods that can be called as instance methods.
+-We can add extension methods in both predefined classes and user created custom classes.
+
+int i = 10;
+bool result = i.IsGreaterThan(100); //returns false
+
+-In the following example, IsGreaterThan() is an extension method for int type.
+-which returns true if value of the int variable is greater than the supplied integer parameter
+
+# We need to consider the following points to define an extension method:
+ - An extension method shoubl be static method of a static class.
+ -It must have this keyword associate with class name
+ -The class name should be the first parameter in the parameter list.

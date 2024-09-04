@@ -1,13 +1,15 @@
 ﻿using fullStackOops.Inheritance;
 using fullStackOops.OperatorOverloading;
+using fullStackOops.PartialClassMethod;
 
 namespace fullStackOops
 {
     internal class Program
     {
-        static async Task Main(string[] args)
-        {
-            //Create an object of Car
+        
+            /* static async Task Main(string[] args)
+             {
+              */   //Create an object of Car
             /*ClassObjects.Car myCar = new ClassObjects.Car();
              myCar.Make = "Toyota";
              myCar.Model = "Camry";
@@ -163,37 +165,39 @@ namespace fullStackOops
              string apiResponse = await StaticClass.APIHelper.GetApiResponseAsync("https://jsonplaceholder.typicode.com/posts/1");
              Console.WriteLine(apiResponse);
  */
-/*
-            OperatorOverloading.Price p = new OperatorOverloading.Price(12, 0);
-            Console.WriteLine(p);
+            /*
+                        OperatorOverloading.Price p = new OperatorOverloading.Price(12, 0);
+                        Console.WriteLine(p);
 
-            OperatorOverloading.Price q = new OperatorOverloading.Price(4,0);
-            Console.WriteLine(q);
+                        OperatorOverloading.Price q = new OperatorOverloading.Price(4,0);
+                        Console.WriteLine(q);
 
-            Price r = p + q;
-            Console.WriteLine(r);
+                        Price r = p + q;
+                        Console.WriteLine(r);
 
-            r++;
-            Console.WriteLine(r);
+                        r++;
+                        Console.WriteLine(r);
 
-            if (p > q)
-                Console.WriteLine("p is greater");
-            else
-                Console.WriteLine("Q is greater");*/
+                        if (p > q)
+                            Console.WriteLine("p is greater");
+                        else
+                            Console.WriteLine("Q is greater");*/
 
             //studentOperator Overloading
-            OperatorOverloading.StudentOperatorOverloading student1 = new OperatorOverloading.StudentOperatorOverloading("Ram", 20, 1);
-            OperatorOverloading.StudentOperatorOverloading student2 = new OperatorOverloading.StudentOperatorOverloading("Shyam", 22, 2);
+            /* OperatorOverloading.StudentOperatorOverloading student1 = new OperatorOverloading.StudentOperatorOverloading("Ram", 20, 1);
+             OperatorOverloading.StudentOperatorOverloading student2 = new OperatorOverloading.StudentOperatorOverloading("Shyam", 22, 2);
 
-            Console.WriteLine(student1);
-            Console.WriteLine(student2);
+             Console.WriteLine(student1);
+             Console.WriteLine(student2);
 
-            StudentOperatorOverloading student3 = student1 + student2;
-            Console.WriteLine(student3);
+             StudentOperatorOverloading student3 = student1 + student2;
+             Console.WriteLine(student3);
 
-            student1++;
-            Console.WriteLine(student1);
+             student1++;
+             Console.WriteLine(student1);*/
 
-        }
+            
+
+       /* }*/
     }
 }
