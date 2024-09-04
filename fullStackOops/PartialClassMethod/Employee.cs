@@ -23,10 +23,10 @@ namespace fullStackOops.PartialClassMethod
 
        
 
-        public static void Main(string[] args)
+/*        public static void Main(string[] args)
         {
             Employee emp = new Employee(1, "Dipesh");
             emp.DisplayDetails();
-        }
+        }*/
     }
 }
