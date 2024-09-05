@@ -4,12 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/*var Details = new
+{
+    FirstName = "Dipesh",
+    LastName = "Deula",
+    Age = 21
+}
+*/
 namespace fullStackOops.Annonymous_Types
 {
+    
     public class AnnonymousTypes
     {
         //Anonymous Type
-        /*var Details = new
+       /* var Details = new
         {
             FirstName = "Dipesh",
             LastName = "Deula",
@@ -32,11 +41,11 @@ namespace fullStackOops.Annonymous_Types
         };*/
 
 
-       /* public static void Main(string[] args)
+        /*public static void Main(string[] args)
         {
             AnnonymousTypes obj = new AnnonymousTypes();
             Console.WriteLine(obj.Details.FirstName);
-            
+
         }*/
     }
 }

@@ -1,0 +1,16 @@
+﻿Delegates
+
+- A Delegates is a pointer to a method.
+- But it is object-oriented, secured and type-safe than function pointer.
+- That means, a delegate holds the address of a method which can be called using that delegates
+- For static method, delegate encapsulates method only.
+- But for instance method, it encapsulates method and instance both.
+- There are three steps involved while working with delegates:
+	# Declare a delegate
+	# Set a target Method
+	# Invoke a delegate
+
+
+Types of Delegates
+1) SingleCast Delegates -> A single function or method is reffered as a Delegate
+2) MultiCast Delegates -> Refers to the delegation of multiple functions or methods

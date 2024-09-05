@@ -67,7 +67,7 @@ namespace fullStackOops.Exception_Handling
                 Console.WriteLine(result);
             }
         }
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             CalculationException calc = new CalculationException();
             calc.calculate(2, 2);
@@ -75,6 +75,6 @@ namespace fullStackOops.Exception_Handling
 
             CalculationException newCalc = new CalculationException();
             newCalc.CalculateAnother();
-        }
+        }*/
     }
 }

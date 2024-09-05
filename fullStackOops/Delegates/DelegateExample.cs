@@ -2,20 +2,7 @@
 delegate int CalculateDelegate(int num);
 
 namespace fullStackOops.Delegates
-{
-
-    //Delegates
-    //A Delegates is a pointer to a method
-    //But it is object-oriented, secured and type-safe than function pointer
-    //that means, a delegate holds the address of a method which can be called using that delegates
-    //for static method, delegate encapsulates method only
-    //But for instance method, it encapsulates method and instance both
-    //There are three steps involved while working with delegates
-    //1. Declare a delegate
-    //2. Create a delegate object or set a target method
-    //3. Call the method using delegate object or invoke the delegate object
-
-    
+{    
     internal class DelegateExample
     {
       
