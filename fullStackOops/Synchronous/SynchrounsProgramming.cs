@@ -40,7 +40,7 @@ namespace fullStackOops.Synchronous
 
             Console.WriteLine("Content processed successfully");
         }
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
             //Define the file path
             string filePath = "data.txt";
@@ -50,6 +50,6 @@ namespace fullStackOops.Synchronous
 
             //Read and process the file synchrounously
             ReandAndProcessFile(filePath);
-        }
+        }*/
     }
 }
