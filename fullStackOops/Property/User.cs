@@ -42,11 +42,12 @@ namespace fullStackOops.Property
                 }
                 else
                 {
-                    age = value;}
+                    age = value;
+                }
             }
         }
 
-        public static void Main(string[] args)
+        /*public static void Main(string[] args)
         {
             User user = new User();
             user.Name = "Dipesh Deula";
@@ -57,6 +58,6 @@ namespace fullStackOops.Property
             Console.WriteLine("Age: "+user.age);
 
         
-        }
+        }*/
     }
 }
