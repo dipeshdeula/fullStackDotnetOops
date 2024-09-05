@@ -8,7 +8,7 @@ namespace fullStackOops.Lamda_Expression
 {
     internal class LamdaExpression
     {
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
             //Expression lamda
 
@@ -27,6 +27,6 @@ namespace fullStackOops.Lamda_Expression
             });
 
             Console.WriteLine("Statemtnt lamda: "+count);
-        }
+        }*/
     }
 }
