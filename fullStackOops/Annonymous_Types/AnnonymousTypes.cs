@@ -5,47 +5,52 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*var Details = new
-{
-    FirstName = "Dipesh",
-    LastName = "Deula",
-    Age = 21
-}
-*/
 namespace fullStackOops.Annonymous_Types
 {
     
-    public class AnnonymousTypes
+public class AnnonymousTypes
     {
-        //Anonymous Type
-       /* var Details = new
+        // Method to demonstrate anonymous types
+        public void DisplayDetails()
         {
-            FirstName = "Dipesh",
-            LastName = "Deula",
-            Age = 21,
-
-            //It also accept nested anonymous types
-            address = new
+            // Anonymous Type
+            var Details = new
             {
-                City = "Hetauda",
-                StreetCity = "Gardai",
-                WardNo = 4
-            },
+                FirstName = "Dipesh",
+                LastName = "Deula",
+                Age = 21,
 
-            //It also accept arrays
-            Projects = new[] {
-                new {ProjectName = "Ecommerce",ProjectDuration="40hrs"},
-                new {ProjectName = "Admin Poratl",ProjectDuration="25hrs"},
-                new {ProjectName = "Accounting",ProjectDuration="30hrs"}
+                // It also accepts nested anonymous types
+                Address = new
+                {
+                    City = "Hetauda",
+                    StreetCity = "Gardai",
+                    WardNo = 4
+                },
+
+                // It also accepts arrays
+                Projects = new[] {
+                    new { ProjectName = "Ecommerce", ProjectDuration = "40hrs" },
+                    new { ProjectName = "Admin Portal", ProjectDuration = "25hrs" },
+                    new { ProjectName = "Accounting", ProjectDuration = "30hrs" }
+                }
+            };
+
+            // Display the details
+            Console.WriteLine($"Name: {Details.FirstName} {Details.LastName}");
+            Console.WriteLine($"Age: {Details.Age}");
+            Console.WriteLine($"Address: {Details.Address.City}, {Details.Address.StreetCity}, Ward No: {Details.Address.WardNo}");
+            Console.WriteLine("Projects:");
+            foreach (var project in Details.Projects)
+            {
+                Console.WriteLine($"- {project.ProjectName} ({project.ProjectDuration})");
             }
-        };*/
+        }
 
-
-        /*public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             AnnonymousTypes obj = new AnnonymousTypes();
-            Console.WriteLine(obj.Details.FirstName);
-
-        }*/
+            obj.DisplayDetails();
+        }
     }
 }

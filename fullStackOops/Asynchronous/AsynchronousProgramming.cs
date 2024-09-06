@@ -8,7 +8,7 @@ namespace fullStackOops.Asynchronous
 {
     internal class AsynchronousProgramming
     {
-        static async Task Main(string[] args)
+        /*static async Task Main(string[] args)
         {
             // Define the file path
             string filePath = "data.txt";
@@ -21,7 +21,7 @@ namespace fullStackOops.Asynchronous
 
             // Read and process the file asynchronously
             await ReadAndProcessFileAsync(filePath);
-        }
+        }*/
 
         // Method to read and process the file asynchronously
         public static async Task ReadAndProcessFileAsync(string filePath)

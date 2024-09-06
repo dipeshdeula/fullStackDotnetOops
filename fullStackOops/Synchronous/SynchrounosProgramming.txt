@@ -6,3 +6,6 @@
 
 -This means that the program will block , or pause , until the method completes
 
+- Synchronous programming is easier to understand and implement, 
+but it can be less efficient than asynchronous programming, especially 
+in a multi-threaded environment.
