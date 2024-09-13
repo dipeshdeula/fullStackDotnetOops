@@ -47,10 +47,10 @@ public class AnnonymousTypes
             }
         }
 
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             AnnonymousTypes obj = new AnnonymousTypes();
             obj.DisplayDetails();
-        }
+        }*/
     }
 }
