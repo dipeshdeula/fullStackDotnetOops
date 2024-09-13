@@ -8,7 +8,7 @@ namespace fullStackOops.TypeConversion
 {
     internal class TypeConversion
     {
-        public static void Main(string[] args)
+        /*public static void Main(string[] args)
         {
             int intNumber = 123;
             double doubleNumber = intNumber; // Implicit Conversion
@@ -83,6 +83,6 @@ namespace fullStackOops.TypeConversion
 
 
 
-        }
+        }*/
     }
 }
