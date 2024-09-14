@@ -9,7 +9,7 @@
             b = temp;
         }
 
-        public static void Main(string[] args)
+        /*public static void Main(string[] args)
         {
             var DemoGeneric = new SwappingWithGenerics();
 
@@ -23,6 +23,6 @@
             string second = "TECH";
             DemoGeneric.Swap<string>(ref first, ref second);
             Console.WriteLine($"Swapped strings: first={first}, second={second}");
-        }
+        }*/
     }
 }

@@ -1,10 +1,12 @@
 ﻿OOP in C# 
 
-- It provides a clear modular structure of programs
-- This makes easy to maintain the existing code
-- codes can be reused without any redundancy
-- It makes the code easier to understand and debug
-- The main of OOP is to bind together the data and 
+- It stands for Object-Oriented Programming.
+- It is a programming paradigm that uses objects and classes in programming.
+- It provides a clear modular structure of programs.
+- This makes easy to maintain the existing code.
+- codes can be reused without any redundancy.
+- It makes the code easier to understand and debug.
+- The main aim of OOP is to bind together the data and 
 the functions that operate on them so that no other part of 
 the code can access this data except that function.
 
@@ -12,6 +14,7 @@ Classes
 
 - A class is a blueprint or a template for creating objects
 - It defines the properties and behaviors of an object
+- It also defines as the group of objects that have common properties
 - A class can have fields , properties, methods, and events
 - A class can have access specifiers like public, private, protected, internal, protected internal
 - They collectively define the data and behavior of an object
@@ -31,7 +34,8 @@ class ClassName
 Objects
 
 - An object is a dynamically created instance of the class.
-- It is created at run time so it can also be called a runtime entity
+- It is a basic unit of Object Oriented Programming and represents the real-life entities. //like a pen, chair, table, car, etc.
+- It is created at run time so it can also be called a runtime entity.
 - All the members of the class can be accessed using the object.
 - The object definition starts with the class name followed by the object name.
 - Then the new operator is used to create the object.
